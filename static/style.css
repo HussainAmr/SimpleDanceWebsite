@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar{
+    padding: 13px 14px;
+    background-color: rgb(20, 4, 65);
+    height: 50px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+   
+}
+ #logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin:-12px 14px;
+    font-size: 15px;
+    margin-right: 22px;
+}
+
+#logo img{
+    height: 45px;
+    filter: invert(1);
+}
+
+#navbar li{
+    list-style: none;
+    margin: -6px 6px;
+    
+}
+
+#navbar li a{
+    text-decoration: none;
+    padding: 2px 15px;
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+#navbar li a:hover{
+    color: rgb(51, 167, 196);  
+}
+
+#introSection{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 425px;
+    color: rgb(20, 4, 65);
+    font-family: 'Comfortaa', cursive;
+    
+}
+
+#introSection #intro1{
+   
+    font-size: 51px;
+    font-weight: 900;
+}
+#introSection #intro2{
+   
+    font-size: 35px;
+    font-weight: 900;
+    margin-top: 15px ;
+}
+
+#introSection::before{
+    background: url('/static/bg.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 425px;
+    opacity: 0.45;
+    
+   
+}
+
+#missionSection{
+    height: 300px;; 
+    width: 67%;
+    margin: auto;
+  
+}
+
+#missionSection h2{
+    font-size: 25px;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    padding-top: 12px;
+}
+.card{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 29%;
+    margin: 23px 20px;
+    height: 209px;
+    overflow: none;
+}
+
+.card h3{
+    text-align: center;
+    margin: 9px;
+    margin-top: 20px;
+    font-family: 'Alata', sans-serif;
+}
+
+.card-box{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img{
+    height: 121px;
+    width: 230px;
+    padding: 0 10px;
+    margin: 8px -10px;
+    
+}
+
+.card-img img{
+    height: inherit; 
+}
+
+.card-content{
+    font-size: 16px;
+}
+
+#sponsorsSection h2{
+    font-size: 25px;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    padding-top: 12px;
+}
+
+#sponsorsSection{
+    height: 300px;
+    background-color: #fbd6d6c7;
+    
+}
+
+#sponsors{
+    margin: 36px auto;
+    width: 545px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+}
+
+.spImage{
+    height: 190px;
+    width: 220px;
+    padding: 10px;
+    margin: 0 25px;
+}
+
+#footer{
+    background-color:rgb(20, 4, 65);
+    height: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

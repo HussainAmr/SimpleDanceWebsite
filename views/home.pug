@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts 
+    script(src="../static/index.js")
+
+block style 
+    style 
+        include ../static/style.css
+
+block content
+    
+    section#introSection
+        div#intro1 Welcome to Hussain's Dance Academy
+        div#intro2 Eat Dance Sleep Repeat
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="../static/img/pic1.png")
+                div.card-content
+                    p One of the best Dance Academy
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="../static/img/pic2.png")
+                div.card-content
+                    p One of the best Dance Academy
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="../static/img/pic3.png")
+                div.card-content
+                    p One of the best Dance Academy
+        
+    section#sponsorsSection
+        h2 Sponsors
+        div#sponsors
+            img(src="../static/img/sp1.png", alt="sp1" Class="spImage") 
+            img(src="../static/img/sp2.png", alt="sp2" Class="spImage") 
+            img(src="../static/img/sp3.jpg", alt="sp3" Class="spImage") 

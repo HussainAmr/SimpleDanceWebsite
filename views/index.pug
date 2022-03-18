@@ -1,0 +1,61 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Hussain's Dance Academy
+        style 
+            include ../static/style.css
+    body 
+        nav#navbar 
+            ul  
+                div#logo 
+                    img(src="../static/img/logo.png")
+                    | HDA
+                li #[a(href='/') Home]
+                li #[a(href='/') About]
+                li #[a(href='/') Services]
+                li #[a(href='/contact') Class Info]
+                li #[a(href='/') Contact Us]
+        
+        section#introSection
+            div#intro1 Welcome to Hussain's Dance Academy
+            div#intro2 Eat Dance Sleep Repeat
+
+        section#missionSection
+            h2 Our Mission
+            div.card
+                h3 Dance Perfection
+                div.card-box
+                    div.card-img
+                        img(src="../static/img/pic1.png")
+                    div.card-content
+                        p One of the best Dance Academy
+            div.card
+                h3 Dance the way you like
+                div.card-box
+                    div.card-img
+                        img(src="../static/img/pic2.png")
+                    div.card-content
+                        p One of the best Dance Academy
+            div.card
+                h3 Expert Teaching
+                div.card-box
+                    div.card-img
+                        img(src="../static/img/pic3.png")
+                    div.card-content
+                        p One of the best Dance Academy
+        
+        section#sponsorsSection
+            h2 Sponsors
+            div#sponsors
+                img(src="../static/img/sp1.png", alt="sp1" Class="spImage") 
+                img(src="../static/img/sp2.png", alt="sp2" Class="spImage") 
+                img(src="../static/img/sp3.jpg", alt="sp3" Class="spImage") 
+
+        footer#footer
+             | Copyright© 2022 HussainDanceAcademy.com  | All Rights Reserved
+
+        script 
+            include ../static/index.js
