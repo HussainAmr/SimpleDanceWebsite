@@ -1,0 +1,18 @@
+git config --global user.name ""
+git config --global user.email ""
+touch .gitignore   //to create a git ignore text file which will igonre files we dont want to push ex- node_modules/
+git init
+git add .      //for staging
+git commit -m "Initial commit"
+git status  //to check file status
+git remote add origin git@github.com:xyz/name of repository.git  //for importing files on github repo using ssh
+ssh-keygen -t ed25519 -C "your_email@example.com"   //to genearate ssh key in account settings
+cat /c/Users/you/.ssh/id_algorithm.pub     	//generating key and add to github
+git push origin master			//pushing files to hithub repo
+
+
+to add changes
+
+git status
+git add .
+git commit -m ""
